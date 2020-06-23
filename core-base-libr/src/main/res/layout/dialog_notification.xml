@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/base_dialog_width"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/notification"></ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dn_open_now"
+            android:layout_width="match_parent"
+            android:layout_height="84pt"
+            android:layout_marginLeft="50pt"
+            android:layout_marginRight="50pt"
+            android:background="@drawable/shape_red_circle"
+            android:gravity="center"
+            android:text="@string/open_now"
+            android:textColor="@color/white"
+            android:textSize="36pt"></TextView>
+
+        <TextView
+            android:id="@+id/dn_refuse"
+            android:layout_width="wrap_content"
+            android:layout_height="90pt"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/refuse"
+            android:textColor="@color/color_"
+            android:textSize="28pt"></TextView>
+    </LinearLayout>
+</RelativeLayout>

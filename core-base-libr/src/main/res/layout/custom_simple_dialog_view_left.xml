@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:gravity="center"
+              android:paddingBottom="16dp"
+              android:paddingLeft="20dp"
+              android:paddingRight="20dp"
+              android:paddingTop="16dp">
+
+    <LinearLayout
+        android:id="@+id/dialog_root_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/material_dialog_view1_bg"
+        android:orientation="vertical">
+
+        <!--标题内容-->
+        <LinearLayout
+            android:id="@+id/title_content_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/material_title_color"
+                android:textSize="18sp"
+                tools:text="Title"/>
+
+            <ScrollView
+                android:id="@+id/content_root_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                tools:layout_height="700dp">
+
+                <LinearLayout
+                    android:id="@+id/content_message_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp">
+
+                    <TextView
+                        android:id="@+id/message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:lineSpacingMultiplier="1.3"
+                        android:textColor="@color/material_message_color"
+                        android:textSize="16sp"
+                        tools:text="message"/>
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+        <!--事件按钮-->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <LinearLayout
+                android:id="@+id/action_button_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:background="#dbdbdb"
+                android:orientation="horizontal"
+                android:paddingTop="0.8dp">
+
+                <TextView
+                    android:id="@+id/negative_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/material_button_bg"
+                    android:gravity="center"
+                    android:textColor="@color/material_positive_color"
+                    android:textSize="17sp"
+                    tools:text="CANCEL"/>
+
+
+                <TextView
+                    android:id="@+id/positive_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/material_button_bg"
+                    android:gravity="center"
+                    android:textColor="@color/material_positive_color"
+                    android:textSize="17sp"
+                    tools:text="OK"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/split_line_view"
+                android:layout_width="0.8dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="#dbdbdb"/>
+        </FrameLayout>
+
+
+    </LinearLayout>
+</FrameLayout>

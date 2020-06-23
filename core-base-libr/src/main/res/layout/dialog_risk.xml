@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="580pt"
+        android:layout_height="760pt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/shape_common_dialog_bg">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="风险提示"
+            android:textSize="36pt"
+            android:textColor="@color/color_333333"
+            android:textStyle="bold"
+            android:layout_marginTop="40pt"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="24pt"
+            android:layout_height="24pt"
+            android:layout_marginTop="26pt"
+            android:layout_marginEnd="26pt"
+            android:src="@drawable/icon_risk_close"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_text1"
+            android:text="1.本页面由上海新汇通投资顾问（或博众）有限公司提供。过往业绩不预示未来表现，市场有风险，投资需谨慎。"
+            android:layout_width="0pt"
+            android:layout_height="wrap_content"
+            android:textSize="30pt"
+            android:textColor="@color/color_333333"
+            android:layout_marginTop="40pt"
+            android:layout_marginStart="30pt"
+            android:layout_marginEnd="30pt"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_text2"
+            android:text="2.诊断结果根据数据量化统计得出，不构成投资性建议。"
+            android:layout_width="0pt"
+            android:layout_height="wrap_content"
+            android:textSize="30pt"
+            android:textColor="@color/color_333333"
+            android:layout_marginTop="40pt"
+            android:layout_marginStart="30pt"
+            android:layout_marginEnd="30pt"
+            app:layout_constraintTop_toBottomOf="@+id/tv_text1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_text3"
+            android:text="3.数据基于历史，不代表未来趋势；不同指标均具有局限性，需要投资者根据实际行情合理运用；投资者应当自主做出决策，自担风险。"
+            android:layout_width="0pt"
+            android:layout_height="wrap_content"
+            android:textSize="30pt"
+            android:textColor="@color/color_333333"
+            android:layout_marginTop="40pt"
+            android:layout_marginStart="30pt"
+            android:layout_marginEnd="30pt"
+            app:layout_constraintTop_toBottomOf="@+id/tv_text2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="match_parent"
+            android:layout_height="2pt"
+            android:layout_marginBottom="30pt"
+            android:background="#DBDBDB"
+            app:layout_constraintBottom_toTopOf="@+id/positive_btn"/>
+
+        <TextView
+            android:id="@+id/positive_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我已阅读并同意"
+            android:textSize="34pt"
+            android:textColor="@color/color_E03C34"
+            android:layout_marginBottom="32pt"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

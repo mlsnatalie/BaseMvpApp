@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_dialog_base"
+    android:layout_width="@dimen/base_dialog_width"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/transparent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/fl_dialog_content"
+        android:layout_width="@dimen/base_dialog_secLayout_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_dialog_title"
+            style="@style/backup_28sp_black_text"
+            android:layout_width="match_parent"
+            android:layout_marginStart="@dimen/base_dialog_title_topMargin"
+            android:layout_marginTop="@dimen/base_dialog_title_topMargin"
+            android:layout_marginEnd="@dimen/base_dialog_title_topMargin"
+            android:layout_marginBottom="@dimen/base_dialog_title_bottomMargin"
+            android:gravity="center"
+            android:lineSpacingMultiplier="1.3"
+            android:text="@string/warm_notify"
+            android:textSize="@dimen/base_dialog_title_text_size"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/fl_dialog_bottom"
+        layout="@layout/dialog_base_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dialog_bottom_height"
+        android:visibility="gone" />
+
+
+</LinearLayout>

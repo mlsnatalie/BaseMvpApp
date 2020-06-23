@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="63dp"
+    android:layout_height="66dp"
+    android:background="@drawable/bg_circle_r">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageButton
+            android:id="@+id/group_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:clickable="false"
+            android:src="@drawable/circle" />
+
+        <View
+            android:id="@+id/view_point"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_alignRight="@+id/group_chat"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/icon_reddot" />
+    </RelativeLayout>
+
+</LinearLayout>

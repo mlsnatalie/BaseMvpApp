@@ -1,2 +1,2 @@
 rootProject.name='BaseMvpApp'
-include ':app'
+include ':app', ':core-base-libr'

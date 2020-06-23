@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--  dialog style-->
+    <dimen name="base_dialog_width">590pt</dimen>
+    <dimen name="base_dialog_secLayout_width">590pt</dimen>
+    <dimen name="max_dialog_height">712pt</dimen>
+    <dimen name="base_dialog_bottom_height">104pt</dimen>
+    <dimen name="base_dialog_title_topMargin">48pt</dimen>
+    <dimen name="base_dialog_title_endMargin">48pt</dimen>
+    <dimen name="base_dialog_title_startMargin">48pt</dimen>
+    <dimen name="base_dialog_title_bottomMargin">32pt</dimen>
+    <dimen name="base_dialog_title_text_size">32pt</dimen>
+    <dimen name="base_dialog_bottom_btn_text_size">32pt</dimen>
+
+    <!--title_dialog-->
+    <dimen name="title_dialog_bottom_margin">48pt</dimen>
+    <dimen name="notification_dialog_height">792pt</dimen>
+
+</resources>
