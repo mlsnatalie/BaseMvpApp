@@ -276,4 +276,11 @@ public class HttpURL {
         return DEBUG ? TEST_API_JDS : API_JDS;
     }
 
+    public static String getWhetherBaseURL() {
+        return DEBUG ? TEST_WHETHER_URL_NEW : RELEASE_WHETHER_URL_NEW;
+    }
+
+    private static final String TEST_WHETHER_URL_NEW = "https://api.openweathermap.org";
+    private static final String RELEASE_WHETHER_URL_NEW = "https://api.openweathermap.org";
+
 }
