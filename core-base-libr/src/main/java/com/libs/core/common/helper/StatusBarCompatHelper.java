@@ -2,8 +2,9 @@ package com.libs.core.common.helper;
 
 import android.app.Activity;
 import android.os.Build;
-import android.support.annotation.ColorInt;
-import android.support.v4.content.ContextCompat;
+
+import androidx.annotation.ColorInt;
+import androidx.core.content.ContextCompat;
 import android.util.Log;
 import android.view.DisplayCutout;
 import android.view.View;

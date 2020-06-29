@@ -12,8 +12,9 @@ import android.graphics.PorterDuff.Mode;
 import android.graphics.PorterDuffXfermode;
 import android.graphics.Rect;
 import android.graphics.RectF;
-import android.support.media.ExifInterface;
 import android.util.Log;
+
+import androidx.exifinterface.media.ExifInterface;
 
 import com.libs.core.common.utils.StorageUtils;
 

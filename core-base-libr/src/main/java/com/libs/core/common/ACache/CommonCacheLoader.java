@@ -1,8 +1,9 @@
 package com.libs.core.common.ACache;
 
 import android.content.Context;
-import android.support.v4.util.LruCache;
 import android.text.TextUtils;
+
+import androidx.collection.LruCache;
 
 import com.libs.core.common.utils.LogUtils;
 import com.libs.core.common.utils.MyUtils;

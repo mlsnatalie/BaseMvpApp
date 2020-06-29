@@ -1,8 +1,9 @@
 package com.libs.core.common.view.simple;
 
-import android.support.v4.widget.SwipeRefreshLayout;
 import android.view.View;
 import android.widget.AbsListView;
+
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 /**
  * 解决SwipeRefreshLayout嵌套ListView引起的下拉事件冲突问题

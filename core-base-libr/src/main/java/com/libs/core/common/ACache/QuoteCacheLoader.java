@@ -4,8 +4,9 @@ import android.content.Context;
 import android.os.Handler;
 import android.os.HandlerThread;
 import android.os.Message;
-import android.support.v4.util.LruCache;
 import android.text.TextUtils;
+
+import androidx.collection.LruCache;
 
 import com.libs.core.business.events.SaveQuoteCacheEvent;
 import com.libs.core.common.utils.LogUtils;

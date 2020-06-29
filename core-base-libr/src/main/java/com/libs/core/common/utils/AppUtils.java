@@ -8,7 +8,8 @@ import android.content.pm.ApplicationInfo;
 import android.net.Uri;
 import android.os.Build;
 import android.provider.Settings;
-import android.support.annotation.RequiresApi;
+
+import androidx.annotation.RequiresApi;
 
 import com.libs.core.R;
 import com.libs.core.common.ACache.CommonCacheLoader;

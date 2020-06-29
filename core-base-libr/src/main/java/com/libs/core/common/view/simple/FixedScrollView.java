@@ -2,7 +2,7 @@ package com.libs.core.common.view.simple;
 
 import android.content.Context;
 import android.graphics.Rect;
-import android.support.v4.widget.NestedScrollView;
+import androidx.core.widget.NestedScrollView;
 import android.util.AttributeSet;
 
 public class FixedScrollView extends NestedScrollView {

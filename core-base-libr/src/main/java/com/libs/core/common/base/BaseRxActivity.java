@@ -2,13 +2,15 @@ package com.libs.core.common.base;
 
 import android.app.Activity;
 import android.app.Dialog;
-import android.arch.lifecycle.Lifecycle;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.Looper;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.Lifecycle;
+import androidx.lifecycle.LifecycleOwner;
 
 import com.libs.core.common.dialog.LoadingDialog;
 import com.libs.core.common.permission.PermissionHelper;
@@ -142,11 +144,11 @@ public abstract class BaseRxActivity<P extends BasePresenter> extends AppCompatA
 
     @Override
     public <T> AutoDisposeConverter<T> bindLifecycle() {
-        return AutoDispose.autoDisposable(AndroidLifecycleScopeProvider.from(this, Lifecycle.Event.ON_DESTROY));
+        return AutoDispose.autoDisposable(AndroidLifecycleScopeProvider.from((LifecycleOwner) this, Lifecycle.Event.ON_DESTROY));
     }
 
     public <T> AutoDisposeConverter<T> bindLifecycle(Lifecycle.Event untilEvent) {
-        return AutoDispose.autoDisposable(AndroidLifecycleScopeProvider.from(this, untilEvent));
+        return AutoDispose.autoDisposable(AndroidLifecycleScopeProvider.from((LifecycleOwner) this, untilEvent));
     }
 
 

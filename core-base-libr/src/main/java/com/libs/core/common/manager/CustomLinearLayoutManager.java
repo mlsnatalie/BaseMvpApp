@@ -1,8 +1,9 @@
 package com.libs.core.common.manager;
 
 import android.content.Context;
-import android.support.v7.widget.LinearLayoutManager;
 import android.util.AttributeSet;
+
+import androidx.recyclerview.widget.LinearLayoutManager;
 
 public class CustomLinearLayoutManager extends LinearLayoutManager {
 

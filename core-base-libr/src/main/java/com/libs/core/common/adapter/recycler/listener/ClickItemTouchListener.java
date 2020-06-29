@@ -2,16 +2,16 @@ package com.libs.core.common.adapter.recycler.listener;
 
 import android.content.Context;
 import android.os.Build;
-import android.support.v4.view.MotionEventCompat;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.RecyclerView.OnItemTouchListener;
 import android.view.GestureDetector.SimpleOnGestureListener;
 import android.view.MotionEvent;
 import android.view.View;
 
+import androidx.core.view.MotionEventCompat;
+import androidx.recyclerview.widget.RecyclerView;
+
 //import android.support.v4.view.GestureDetectorCompat;
 
-public abstract class ClickItemTouchListener implements OnItemTouchListener {
+public abstract class ClickItemTouchListener implements RecyclerView.OnItemTouchListener {
 
     private final GestureDetectorCompat mGestureDetector;
 

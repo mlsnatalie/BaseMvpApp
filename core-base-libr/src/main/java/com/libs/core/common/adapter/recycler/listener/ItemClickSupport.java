@@ -1,9 +1,10 @@
 package com.libs.core.common.adapter.recycler.listener;
 
-import android.support.v7.widget.RecyclerView;
 import android.view.HapticFeedbackConstants;
 import android.view.SoundEffectConstants;
 import android.view.View;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.libs.core.R;
 

@@ -1,7 +1,8 @@
 package com.libs.core.web;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+
+import androidx.annotation.Nullable;
 
 import com.libs.core.common.base.BasePresenter;
 import com.libs.core.common.base.BaseRxActivity;

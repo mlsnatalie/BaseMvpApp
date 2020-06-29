@@ -1,8 +1,8 @@
 package com.libs.core.business.http.proxy;
 
-import android.support.annotation.FontRes;
-import android.support.annotation.NonNull;
 import android.text.TextUtils;
+
+import androidx.annotation.NonNull;
 
 import com.google.gson.Gson;
 import com.libs.core.business.http.HttpCommonParamsProxy;

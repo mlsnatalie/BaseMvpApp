@@ -9,7 +9,6 @@ import android.net.ConnectivityManager;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Handler;
-import android.support.v4.media.AudioAttributesCompat;
 import android.text.TextUtils;
 import android.view.TextureView;
 import android.widget.Toast;
@@ -58,7 +57,7 @@ public class MusicPlayer {
             public void onCompletion(MediaPlayer mp) {
                 LogUtils.d(TAG, "setOnCompletionListener onCompletion");
                 if (getDuration() > 0 && getCurrentPosition() * 1.0f / getDuration() > 0.99f) {
-                    FloatWindowManager.get().updateComplete();
+//                    FloatWindowManager.get().updateComplete();
                     if (currentStatus != MusicEvent.PAUSE) {
                         currentStatus = MusicEvent.PAUSE;
                         notifyPlayChange();
@@ -176,7 +175,7 @@ public class MusicPlayer {
             e.printStackTrace();
         }
 
-        FloatWindowManager.get().update(0, 0f);
+//        FloatWindowManager.get().update(0, 0f);
         geTimerTask();
 
         try {
@@ -200,8 +199,8 @@ public class MusicPlayer {
                 //getDuration 获取的参数可能是非法的
                 int tempDuration = getDuration();
                 tempDuration = tempDuration <= 0 ? 0 : tempDuration;
-                FloatWindowManager.get().update(tempDuration / 1000,
-                        tempDuration == 0 ? 0f : getCurrentPosition() * 1.0f / tempDuration);
+//                FloatWindowManager.get().update(tempDuration / 1000,
+//                        tempDuration == 0 ? 0f : getCurrentPosition() * 1.0f / tempDuration);
                 /*FloatWindowManager.get().update(getDuration() / 1000,
                         getDuration() == 0 ? 0f : getCurrentPosition() * 1.0f / getDuration());*/
             }

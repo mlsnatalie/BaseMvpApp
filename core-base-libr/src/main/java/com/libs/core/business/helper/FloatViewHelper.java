@@ -154,7 +154,7 @@ public class FloatViewHelper {
         mFloatView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                SensorsTracker.getInstance().track("float_service", "悬浮客服");
+//                SensorsTracker.getInstance().track("float_service", "悬浮客服");
                 try {
                     // 打开客服
                     Intent intent = new Intent();

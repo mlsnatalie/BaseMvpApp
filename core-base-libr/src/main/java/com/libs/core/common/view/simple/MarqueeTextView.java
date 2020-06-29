@@ -1,8 +1,9 @@
 package com.libs.core.common.view.simple;
 
 import android.content.Context;
-import android.support.v7.widget.AppCompatTextView;
 import android.util.AttributeSet;
+
+import androidx.appcompat.widget.AppCompatTextView;
 
 /**
  * 跑马灯

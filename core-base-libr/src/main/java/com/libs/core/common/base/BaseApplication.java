@@ -9,8 +9,6 @@ import android.content.res.Resources;
 import com.libs.core.BuildConfig;
 import com.libs.core.common.base.tracker.ActivityTracker;
 import com.libs.core.common.manager.PreferenceManager;
-import com.libs.core.common.utils.LogUtils;
-import com.yhao.floatwindow.FloatWindow;
 
 import me.jessyan.autosize.AutoSize;
 import me.jessyan.autosize.AutoSizeConfig;
@@ -18,7 +16,6 @@ import me.jessyan.autosize.onAdaptListener;
 import me.jessyan.autosize.unit.Subunits;
 import me.jessyan.autosize.utils.ScreenUtils;
 
-import static android.support.constraint.Constraints.TAG;
 
 /**
  * Application基类
@@ -36,7 +33,7 @@ public abstract class BaseApplication extends Application {
         getResources();
         init();
         // 初始化浮动框生命周期管理
-        FloatWindow.initLifecycle(this);
+//        FloatWindow.initLifecycle(this);
     }
 
     /**

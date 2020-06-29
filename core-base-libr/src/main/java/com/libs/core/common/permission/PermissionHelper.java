@@ -7,13 +7,16 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.provider.Settings;
-import android.support.annotation.NonNull;
-import android.support.v4.app.FragmentActivity;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AlertDialog;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
+import androidx.core.content.ContextCompat;
+import androidx.fragment.app.FragmentActivity;
 
 import com.libs.core.BuildConfig;
 import com.libs.core.R;
+import com.libs.core.common.base.BasePresenter;
+import com.libs.core.common.base.BaseRxActivity;
 import com.libs.core.common.utils.LogUtils;
 import com.tbruyelle.rxpermissions2.Permission;
 import com.tbruyelle.rxpermissions2.RxPermissions;
@@ -66,6 +69,9 @@ public class PermissionHelper<T extends FragmentActivity> {
         this.activity = activity;
         rxPermissions = new RxPermissions(activity);
         rxPermissions.setLogging(BuildConfig.DEBUG);
+    }
+
+    public <P extends BasePresenter> PermissionHelper(BaseRxActivity<P> pBaseRxActivity) {
     }
 
     /**

@@ -1,10 +1,10 @@
 package com.libs.core.common.base;
 
-import android.arch.lifecycle.Lifecycle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.app.FragmentStatePagerAdapter;
-import android.support.v4.view.ViewPager;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentPagerAdapter;
+import androidx.fragment.app.FragmentStatePagerAdapter;
+import androidx.lifecycle.Lifecycle;
+import androidx.viewpager.widget.ViewPager;
 
 import com.libs.core.common.utils.LogUtils;
 import com.uber.autodispose.AutoDisposeConverter;

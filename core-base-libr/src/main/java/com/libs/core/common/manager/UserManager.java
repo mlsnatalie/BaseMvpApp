@@ -6,7 +6,6 @@ import com.libs.core.business.consts.PreferConst;
 import com.libs.core.business.http.vo.CustomUserVo;
 import com.libs.core.business.http.vo.UserVo;
 import com.libs.core.business.sensor.SensorsTracker;
-import com.networkbench.agent.impl.NBSAppAgent;
 
 
 /**
@@ -114,10 +113,10 @@ public class UserManager {
         PreferenceManager.putObject(KEY_USER_VO, userVo);
         if (!TextUtils.isEmpty(userVo.getId())) {
             // 神策登录
-            SensorsTracker.getInstance().setProperties(true);
-            SensorsTracker.getInstance().login(UserManager.getInstance().getUid());
-            NBSAppAgent.setUserIdentifier(userVo.getId());
-            NBSAppAgent.setUserCrashMessage("uid", userVo.getId());
+//            SensorsTracker.getInstance().setProperties(true);
+//            SensorsTracker.getInstance().login(UserManager.getInstance().getUid());
+//            NBSAppAgent.setUserIdentifier(userVo.getId());
+//            NBSAppAgent.setUserCrashMessage("uid", userVo.getId());
             PreferenceManager.putString(KEY_LAST_LOGIN_USERID, userVo.getId());
         }
     }
@@ -136,7 +135,7 @@ public class UserManager {
         // 清空诊股指标权限
         PreferenceManager.putString(getUid() + DIAGNOSE_INDEX, "");
 
-        SensorsTracker.getInstance().setProperties(false);
+//        SensorsTracker.getInstance().setProperties(false);
     }
 
     /**

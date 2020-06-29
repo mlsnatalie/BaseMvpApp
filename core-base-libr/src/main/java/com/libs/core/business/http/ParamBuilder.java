@@ -34,7 +34,7 @@ public class ParamBuilder {
         Map<String, String> params = new HashMap<>();
         params.put("timestamp", String.valueOf(System.currentTimeMillis()));
         params.put("version", DeviceUtils.getVersionName(AppContext.getInstance().getContext()));// 版本号
-        params.put("device", SensorsTracker.getInstance().getDistinctId());// 设备号
+//        params.put("device", SensorsTracker.getInstance().getDistinctId());// 设备号
         params.put("appType", "1");// 1-Android 2-IOS
         String channelId = DeviceInfo.getAppStringMetaData(AppContext.getInstance().getContext(), "UMENG_CHANNEL");
         params.put("channelId", TextUtils.isEmpty(channelId) ? "jince" : channelId);

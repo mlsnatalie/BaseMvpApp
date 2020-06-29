@@ -1,11 +1,12 @@
 package com.libs.core.common.view;
 
 import android.content.Context;
-import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.Gravity;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+
+import androidx.annotation.Nullable;
 
 import com.bumptech.glide.Glide;
 import com.libs.core.R;
