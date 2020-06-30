@@ -1,8 +1,11 @@
 package com.example.basemvpapp
 
 import android.os.Bundle
+import androidx.core.content.ContextCompat
 import com.example.basemvpapp.component.CommonTopBarContract
 import com.libs.core.common.base.BaseRxActivity
+import com.libs.core.common.helper.StatusBarCompatHelper
+import com.libs.core.common.utils.StatusBarUtils
 import kotlinx.android.synthetic.main.activity_net.*
 
 /**
@@ -23,6 +26,13 @@ class NetActivity : BaseRxActivity<NetPresenter>(), INetMv.NetView {
     }
 
     override fun initViewData(bundle: Bundle?) {
+//        StatusBarUtils.setLightStatusBar(this)
+        StatusBarCompatHelper.setStatusBarStyle(
+            this,
+            false,
+            ContextCompat.getColor(this, R.color.red_pay),
+            true
+        )
         initView()
         mPresenter.getWeather("15646a06818f61f7b8d7823ca833e1ce", "94042")
     }
@@ -30,6 +40,8 @@ class NetActivity : BaseRxActivity<NetPresenter>(), INetMv.NetView {
     private fun initView() {
         top_bar.setTitleWord("网络请求")
         top_bar.setRightWord("测试")
+        top_bar.setStatusViewColor(ContextCompat.getColor(this, R.color.red_pay))
+//        top_bar.setEnableStatusView(false)
         top_bar.setCallBack(object : CommonTopBarContract.OnCallBack() {
             override fun onBackClick() {
                 super.onBackClick()

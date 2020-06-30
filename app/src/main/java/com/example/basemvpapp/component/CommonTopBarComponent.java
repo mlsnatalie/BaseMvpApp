@@ -328,6 +328,14 @@ public class CommonTopBarComponent extends LinearLayout implements CommonTopBarC
     }
 
     @Override
+    public CommonTopBarComponent setStatusViewColor(int color) {
+        if (view_status_bar != null) {
+            view_status_bar.setBackgroundColor(color);
+        }
+        return this;
+    }
+
+    @Override
     public CommonTopBarComponent setCallBack(OnCallBack callBack) {
         mCallBack = callBack;
         return this;

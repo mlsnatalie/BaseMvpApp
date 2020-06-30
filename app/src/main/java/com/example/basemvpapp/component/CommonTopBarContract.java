@@ -58,6 +58,8 @@ public interface CommonTopBarContract {
 
     View getDividerView();
 
+    CommonTopBarComponent setStatusViewColor(int color);
+
     CommonTopBarComponent setCallBack(OnCallBack callBack);
 
     abstract class OnCallBack {
