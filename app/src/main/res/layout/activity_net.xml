@@ -6,6 +6,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:ignore="MissingDefaultResource">
 
+    <com.example.basemvpapp.component.CommonTopBarComponent
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tb_back_icon="@mipmap/icon_white_back"
+        app:tb_background_color="#000000"
+        app:tb_right_word_color="@color/white"
+        app:tb_title_word_color="@color/white"
+        app:tb_title_word_size="18sp"
+        app:layout_constraintTop_toTopOf="parent"/>
+
     <TextView
         android:id="@+id/tv_text"
         android:layout_width="wrap_content"

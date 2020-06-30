@@ -1,6 +1,7 @@
 package com.example.basemvpapp
 
 import android.os.Bundle
+import com.example.basemvpapp.component.CommonTopBarContract
 import com.libs.core.common.base.BaseRxActivity
 import kotlinx.android.synthetic.main.activity_net.*
 
@@ -22,7 +23,19 @@ class NetActivity : BaseRxActivity<NetPresenter>(), INetMv.NetView {
     }
 
     override fun initViewData(bundle: Bundle?) {
+        initView()
         mPresenter.getWeather("15646a06818f61f7b8d7823ca833e1ce", "94042")
+    }
+
+    private fun initView() {
+        top_bar.setTitleWord("网络请求")
+        top_bar.setRightWord("测试")
+        top_bar.setCallBack(object : CommonTopBarContract.OnCallBack() {
+            override fun onBackClick() {
+                super.onBackClick()
+                finish()
+            }
+        })
     }
 
     override fun onNetActionResult(action: Int, vararg objects: Any?) {
@@ -34,7 +47,6 @@ class NetActivity : BaseRxActivity<NetPresenter>(), INetMv.NetView {
                     tv_text.text = text.cod
                 }
             }
-
         }
     }
 }

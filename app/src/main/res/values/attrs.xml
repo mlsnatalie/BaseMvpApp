@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CommonTopBarComponent">
+        <attr name="tb_back_word" format="string" />
+        <attr name="tb_back_word_color" format="color" />
+        <attr name="tb_back_word_size" format="dimension" />
+        <attr name="tb_back_icon" format="reference" />
+        <attr name="tb_title_word" format="string" />
+        <attr name="tb_title_word_color" format="color" />
+        <attr name="tb_title_word_size" format="dimension" />
+        <attr name="tb_right_word" format="string" />
+        <attr name="tb_right_word_color" format="color" />
+        <attr name="tb_right_word_size" format="dimension" />
+        <attr name="tb_right_icon" format="reference" />
+        <attr name="tb_background_color" format="color" />
+
+    </declare-styleable>
+</resources>

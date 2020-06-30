@@ -43,4 +43,6 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     implementation "com.android.support:multidex:1.0.3"
+    //移动安全联盟MSA sdk依赖
+    implementation files('libs/msa_mdid_1.0.13.aar')
 }
